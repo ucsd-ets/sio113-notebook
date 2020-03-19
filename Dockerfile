@@ -14,4 +14,6 @@ RUN pip install geopandas==0.7.0 \
                 lmfit==0.9.11 \
                 PyQt5==5.9.2 \
                 future==0.16.0 \
-		geoplot
+		geoplot \
+		plotly==4.5.4
+
