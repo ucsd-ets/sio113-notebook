@@ -6,7 +6,7 @@ RUN conda install --channel conda-forge cartopy==0.17.0 \
                                         pandas==0.23.1 \
                                         scikit-learn==0.20.0 \
                                         seaborn==0.9.0 \
-                                        imageio==2.4.1 \
+                                        imageio==2.4.1
 
 RUN pip install geopandas==0.7.0 \
                 descartes==1.1.0 \
