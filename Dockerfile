@@ -1,5 +1,10 @@
 FROM ucsdets/datascience-notebook:2019.4-stable
 
+RUN apt-get update
+RUN apt-get install build-essential \
+		    manpages-dev \
+		    -y
+
 # Use conda to install all required packages
 RUN conda install --channel conda-forge cartopy==0.17.0 \
                                         matplotlib==2.2.3 \
@@ -15,5 +20,7 @@ RUN pip install geopandas==0.7.0 \
                 PyQt5==5.9.2 \
                 future==0.16.0 \
 		geoplot \
-		plotly==4.5.4
+		plotly==4.5.4 \
+		mtspec \
+		git+https://github.com/aaren/wavelets
 
